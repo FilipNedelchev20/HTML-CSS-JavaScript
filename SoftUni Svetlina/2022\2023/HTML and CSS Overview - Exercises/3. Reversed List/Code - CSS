@@ -1,0 +1,6 @@
+.wrapper {
+Background color: #dddddd;
+ Text color: #95191a;
+ Width container: 300px;
+ Border: 1px solid #000000;
+}
