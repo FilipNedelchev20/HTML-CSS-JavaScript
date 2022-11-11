@@ -1,0 +1,13 @@
+function positive(input){
+let numberX = input[0]
+let numberZ = input[1]
+let numberY = input[2]
+let result = numberX*numberY*numberZ
+if(result<0){
+    console.log("Negative")
+}
+else{
+    console.log("Positive")
+}
+
+}
