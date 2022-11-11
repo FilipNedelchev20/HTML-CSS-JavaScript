@@ -1,0 +1,7 @@
+function multiply(input){
+    let elements = input
+    let numberX = elements[0];
+    let numberY = elements[1];
+    let result = numberX*numberY;
+    console.log(result);
+}
