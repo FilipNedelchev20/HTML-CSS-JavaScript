@@ -1,0 +1,7 @@
+function print(input){
+   let elements = input;
+    for(let element of elements)
+ {
+    console.log(element);
+ }   
+}
