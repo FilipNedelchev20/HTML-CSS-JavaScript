@@ -1,0 +1,13 @@
+function multidivide(input){
+    let elements = input
+    let numberN = elements[0];
+    let numberX = elements[1];
+    let result1 = numberX*numberN;
+    let result2 = numberN/numberX;
+    if(numberX>=numberN){
+        console.log(result1);
+    }
+else if(numberN>numberX){
+console.log(result2);
+}
+}
