@@ -1,0 +1,15 @@
+function solve() {
+  let list = document.getElementById('items');
+  list.addEventListener('click', deleteItem)
+  let newtext =  document.getElementById('newText')
+  let newtextex =  document.createElement('li');
+  newtextex.innerHTML = `${newtext.value} <a href="#">[Delete]</a>`
+  list.appendChild(newtextex)
+    newtext.value = ''
+
+
+  function deleteItem(item){
+    let element = item.target.parentNode
+    element.remove()
+  }
+}
