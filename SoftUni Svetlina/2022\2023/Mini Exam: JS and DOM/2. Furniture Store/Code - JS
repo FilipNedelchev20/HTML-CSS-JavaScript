@@ -1,0 +1,13 @@
+function solve() {
+let textarea = document.getElementsByTagName('textarea');
+
+  let tbody = document.querySelector('#tbody, tr')
+  textarea.forEach(element => {
+    let elements = document.createElement('td')
+    elements.textContent = element;
+    tbody.appendChild(elements)
+    textarea ="";
+  });
+
+ 
+}
