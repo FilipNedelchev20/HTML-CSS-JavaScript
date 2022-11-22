@@ -1,0 +1,8 @@
+function notify(message) {
+let mesage = document.getElementById('notification')
+mesage.textContent = message
+mesage.style.display = 'block'
+setTimeout(() =>{
+    mesage.style.display = "none"   
+}, 2000)
+}
