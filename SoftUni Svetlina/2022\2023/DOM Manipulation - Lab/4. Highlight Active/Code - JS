@@ -1,0 +1,14 @@
+
+    function focus(){
+        Array.from(document.querySelectorAll('div input'))
+        .forEach(s=>{
+    s.addEventListener('focus', onFocus);
+         s.addEventListener('blur', reset)
+        })
+        function onFocus(event){
+            event.target.parentNode.className = 'focused';
+        }
+        function reset(event){
+            event.target.parentNode.removeAttribute('class');
+        }
+    }
