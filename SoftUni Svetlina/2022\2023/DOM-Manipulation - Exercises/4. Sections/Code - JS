@@ -1,0 +1,15 @@
+function create(sentences) {
+    let content = document.getElementById('content');
+        for (let sentence of sentences) {
+            let div = document.createElement('div');
+            let paragraph = document.createElement('p');
+            paragraph.style.display = 'none';
+            paragraph.textContent = sentence;
+            div.appendChild(paragraph);
+            div.addEventListener('click',displayParagraph);
+            content.appendChild(div);
+        }
+        function displayParagraph(event) {
+           event.target.children[0].style.display = 'block';
+        }
+}
