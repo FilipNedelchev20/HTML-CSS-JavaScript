@@ -1,0 +1,16 @@
+function validate() {
+    let inputBox = document.getElementById('email')
+inputBox.addEventListener('change', onChange);
+let regex = /^([\w\-.]+)@([a-z]+)(\.[a-z]+)+$/;
+
+function onChange()
+{
+
+if (!regex.test(inputBox.value)){
+inputBox.className = 'error';
+}
+else{
+inputBox.removeAttribute('class');
+}
+}
+}
